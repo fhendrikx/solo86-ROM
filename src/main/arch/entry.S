@@ -18,6 +18,10 @@ _sig:
     .word start
     .word 0x04
     .word 0x1000
+    .word 0x03
+    .word 0x00
+    .word 0x00
+    .word 0x00
     .asciz "Test"
     .fill 256 - (. - _sig), 1, 0xFF
 
