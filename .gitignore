@@ -5,4 +5,7 @@
 *.o
 cross/*
 !cross/Makefile
-out/*
+hex/*
+!hex/Makefile
+rom/*
+!rom/Makefile

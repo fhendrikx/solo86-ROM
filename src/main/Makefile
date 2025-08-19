@@ -18,7 +18,7 @@ arch::
 
 $(NAME): $(OBJS)
 	$(LD) arch/entry.o $(OBJS) $(LIBS) -T $(NAME).ld --oformat=binary -m i386elks -Map $(NAME).map -o $(NAME)
-	$(CP) $(NAME) $(TOPDIR)/out
+	$(CP) $(NAME) $(TOPDIR)/rom
 
 clean:
 	rm -f $(NAME)
