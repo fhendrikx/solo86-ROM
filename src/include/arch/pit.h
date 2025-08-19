@@ -1,7 +1,7 @@
 #ifndef __arch_pit__
 #define __arch_pit__
 
-#include <solo/config.h>
+#include <config.h>
 
 #define PIT_SPEED           1000000
 #define PIT_LATCH           (PIT_SPEED / SYS_SPEED)

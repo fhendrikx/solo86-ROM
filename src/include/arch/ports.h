@@ -4,6 +4,9 @@
 #define COM0_CMD            0x20    // com command port
 #define COM0_DATA           0x22    // com data port
 
+#define PIC_CMD             0x18
+#define PIC_DATA            0x1A
+
 #define PIT_PORT0           0x00
 #define PIT_PORT0_EN        0x01
 #define PIT_PORT1           0x02

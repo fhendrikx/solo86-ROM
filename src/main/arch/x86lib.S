@@ -22,8 +22,8 @@
 # .global memsetw
 # .global memcmpb
 # .global memcmpw
-# 
-# .global int_set
+
+.global int_set
 
 
 ######################################################################

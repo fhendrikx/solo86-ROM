@@ -1,7 +1,7 @@
 include $(TOPDIR)/Makefile.conf
 
 NAME = libarch.a
-OBJS = console.o divmodsi3.o ldivmod.o x86lib.o
+OBJS = console.o divmodsi3.o int.o irq.o ldivmod.o pit.o vectors.o x86lib.o
 
 .c.o:
 	$(CC) $(CCFLAGS) -I.. -o $*.o $<

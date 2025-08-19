@@ -2,7 +2,7 @@ include $(TOPDIR)/Makefile.conf
 
 NAME = main
 LIBS = -Larch -L$(TOPDIR)/lib -larch
-OBJS = console.o ctype.o main.o mem.o printf.o string.o vsprintf.o
+OBJS = console.o ctype.o fault.o irq.o main.o mem.o printf.o string.o vsprintf.o
 
 .c.o:
 	$(CC) $(CCFLAGS) -o $*.o $<
