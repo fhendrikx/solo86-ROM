@@ -30,11 +30,9 @@
 #define CMD_MEM_READ_X_16       0x4E
 #define CMD_MEM_READ_Y_16       0x4F
 
-#define CMD_CLIPPING_MODE       0x50
-#define CMD_WRAP_MODE           0x51
-#define CMD_UPDATE              0x52
-#define CMD_CLEAR_SCREEN        0x53
-#define CMD_FILL_SCREEN         0x54
+#define CMD_UPDATE              0x50
+#define CMD_CLEAR_SCREEN        0x51
+#define CMD_FILL_SCREEN         0x52
 
 #define CMD_DRAW_PIXEL_8        0x60
 #define CMD_DRAW_PIXEL_16       0x80
@@ -172,18 +170,6 @@ void SetMemReadY_16(uint16_t y) {
     outb(y & 0xFF, VC_PARAM);  // low byte
     outb(y >> 8, VC_PARAM);    // high byte
     outb(CMD_MEM_READ_Y_16, VC_CTRL);
-
-}
-
-void SetClippingMode() {
-
-    outb(CMD_CLIPPING_MODE, VC_CTRL);
-
-}
-
-void SetWrapMode() {
-
-    outb(CMD_WRAP_MODE, VC_CTRL);
 
 }
 
