@@ -1,7 +1,6 @@
 # SoloROM
 
-This repository contains the code and tools required to build Solo86 ROM
-code in C and Assembler.
+This repository contains the code and tools required to build Solo/86 ROM code in C and Assembler. This repository contains a generic "template" that can be used to build ROM images for Solo/86.
 
 
 ## Building SoloROM
